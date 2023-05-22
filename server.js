@@ -4,7 +4,8 @@ const path = require("path");
 
 // Create an instance of Express.js
 const app = express();
-const PORT = 3001; // Port number where the server will listen
+// Set the port to 3000
+const PORT = process.env.PORT || 3001; // Port number where the server will listen
 
 // Middleware setup
 // Configure middleware to parse incoming request bodies
@@ -81,7 +82,7 @@ app.get("/notes", (req, res) => {
 });
 
 // Route to serve the index.html
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
