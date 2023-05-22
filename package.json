@@ -13,5 +13,8 @@
     "express": "^4.16.4",
     "expressjs": "^1.0.1",
     "fs": "^0.0.1-security"
+  },
+  "engines": {
+    "node": "18.16.0"
   }
 }
