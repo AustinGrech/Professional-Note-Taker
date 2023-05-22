@@ -4,8 +4,8 @@ const path = require("path");
 
 // Create an instance of Express.js
 const app = express();
-// Set the port to 3000
-const PORT = process.env.PORT || 3001; // Port number where the server will listen
+// Set the port to 3000 or environment port
+const port = process.env.PORT || 3001; // Port number where the server will listen
 
 // Middleware setup
 // Configure middleware to parse incoming request bodies
@@ -86,6 +86,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
-app.listen(process.argv.PORT || PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(process.argv.PORT || port, () => {
+  console.log(`Server running on http://localhost:${port}`);
 });
