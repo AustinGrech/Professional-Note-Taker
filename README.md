@@ -9,7 +9,7 @@
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Live](#live-url)
+- [Live Link](#live-url)
 - [Questions](#questions)
 
 ## Description
